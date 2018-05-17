@@ -1,0 +1,81 @@
+/* RESPONSIVE STYLES FOR THE PROJECT */
+
+@media screen and (min-width: 850px) {
+  .main, nav, header {
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .header_container {
+    flex-direction: row;
+  }
+
+  .header_title h1, .header_title h2 {
+    text-align: center;
+  }
+
+  .header_logo {
+    align-items: center;
+  }
+
+  ul {
+    display: inline-grid;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .nav {
+    z-index: 10;
+    background-color: #fff;
+    width: 300px;
+    position: absolute;
+    -webkit-transform: translate(-400px, 0);
+    transition: transform 0.3s ease;
+  }
+
+  .nav.open {
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+  }
+
+  .nav_section {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  .header_menu {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding: 1em;
+  }
+
+  .header_menu svg {
+    width: 32px;
+    fill:  #02b3e4;
+   }
+
+   ul {
+     display: inline-grid;
+   }
+  }
+
+@media screen and (min-width: 561px) {
+  .header_menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .header_image {
+    width: 50%;
+  }
+  .header_title {
+    width: 50%;
+    font-size: 9px;
+  }
+}
